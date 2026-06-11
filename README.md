@@ -33,7 +33,6 @@ conda activate fedcore
 pip install -r requirements.txt
 ```
 
-*(Note: If you are evaluating the codebase on a CPU-only machine, PyTorch tensors will automatically fallback to the `cpu` device without throwing CUDA execution errors.)*
 
 ## 3. Core System Primitives & Verification
 
@@ -120,6 +119,3 @@ python main_credit_card.py --prompt_dim 32 --feature_dim 256
 python main_yelp.py --prompt_dim 32 --feature_dim 256
 ```
 
-## 6. Acknowledgments
-
-We gratefully acknowledge the PyTorch and PyTorch Geometric (PyG) communities for providing the highly optimized tensor operations that enabled the edge-friendly implementation of our linear-time orthogonal constraints.
