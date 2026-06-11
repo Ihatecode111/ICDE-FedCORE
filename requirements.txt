@@ -1,0 +1,24 @@
+# ==========================================================
+# FedCORE: Decentralized Meta-Causal Data Preparation Engine
+# Environment Dependencies
+# 
+# Supported Python versions: >= 3.8
+# Recommended hardware: CUDA-enabled GPU (NVIDIA RTX 3090 / A100)
+# ==========================================================
+
+# 1. Core Deep Learning & Tensor Operations
+torch>=2.0.0          # Tested with CUDA 11.8 / 12.1
+
+# 2. Graph Topology Processing (Required for Yelp e-commerce graph)
+torch_geometric>=2.3.0
+torch_scatter>=2.1.1
+torch_sparse>=0.6.17
+
+# 3. Spatio-temporal & Tabular Data Engineering 
+numpy>=1.24.3         # Matrix manipulations for Air-Quality / Credit Card
+pandas>=2.0.0         # Dataframe operations for non-IID partitioning
+scikit-learn>=1.3.0   # Evaluation metrics (AUROC, Macro-F1)
+scipy>=1.10.1         # Sparse matrix support
+
+# 4. System Logging & Utility
+tqdm>=4.65.0          # Progress bars for simulated federated communication
